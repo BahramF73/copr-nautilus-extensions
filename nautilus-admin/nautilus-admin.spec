@@ -34,7 +34,7 @@ You can use `nautilus -q` command.
 
 
 %build
-%cmake
+%cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 %cmake_build
 
 
@@ -48,6 +48,10 @@ You can use `nautilus -q` command.
 
 
 %changelog
+* Sat Jun 27 2026 Bahram Farahmand <bahram.0098.bf@gmail.com> - 1.2.0-3
+- Add cmake policy version minimum
+- Fix build with newer cmake
+
 * Tue Nov 18 2025 LionHeartP <LionHeartP@proton.me> - 1.2.0-2
 - Remove gedit dependency as it's now handled by Text Editor
 
